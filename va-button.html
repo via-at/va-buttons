@@ -1,0 +1,38 @@
+<dom-module id="va-button">
+  
+  <template>
+    
+    <style>
+      paper-button {
+        @apply(--va-button)
+      }
+      
+      paper-button iron-icon {
+        margin-right: 5px;
+      }
+    </style>
+    
+    <paper-button disabled="[[disabled]]" raised="[[raised]]">
+      <template is="dom-if" if="[[icon]]">
+        <iron-icon icon="[[icon]]"></iron-icon>
+      </template>
+      <content></content>
+    </paper-button>
+    
+  </template>
+  
+  <script>
+    Polymer({
+      
+      is: 'va-button',
+      
+      properties: {
+        icon: String,
+        raised: Boolean,
+        disabled: Boolean
+      }
+      
+    });
+  </script>
+  
+</dom-module>

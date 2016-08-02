@@ -1,0 +1,16 @@
+{
+  "name": "va-buttons",
+  "version": "0.0.1",
+  "description": "Useful button components paper-button does not have using Polymer",
+  "main": [
+    "va-button.html",
+    "va-link-button.html"
+  ],
+  "license" : "MIT",
+  "dependencies": {
+    "polymer": "polymer/polymer#^1.6.0"
+  },
+  "devDependencies": {
+    "web-component-tester": "^4.0.0"
+  }
+}
