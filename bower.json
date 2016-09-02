@@ -8,7 +8,8 @@
   ],
   "license" : "MIT",
   "dependencies": {
-    "polymer": "polymer/polymer#^1.6.0"
+    "polymer": "polymer/polymer#^1.6.1",
+    "paper-input": "PolymerElements/paper-input#^1.1.11"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"
