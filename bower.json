@@ -9,7 +9,7 @@
   "license" : "MIT",
   "dependencies": {
     "polymer": "polymer/polymer#^1.7.0",
-    "paper-input": "PolymerElements/paper-input#^1.1.11"
+    "iron-icon": "polymerelements/iron-icon#^1.0.0"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"
