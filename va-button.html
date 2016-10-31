@@ -1,40 +1,10 @@
+<link rel="import" href="./va-button-style.html">
+
 <dom-module id="va-button">
   
   <template>
-    
-    <style>
-      :host {
-        display: inline-block;
-        position: relative;
-        color: white;
-        line-height: 3em;
-        vertical-align: middle;
-        text-align: center;
-        text-transform: uppercase;
-      }
 
-      :host iron-icon {
-        margin-right: 5px;
-      }
-
-      :host(:not([danger])) {
-        border-bottom: 5px solid #66A34E;
-        background-color: #7DC35E;
-      }
-
-      :host(:not([danger]):active) {
-        background-color: #66A34E;
-      }
-
-      :host([danger]) {
-        border-bottom: 5px solid #C74D3E;
-        background-color: #F45D48;
-      }
-
-      :host([danger]:active) {
-        background-color: #C74D3E;
-      }
-    </style>
+    <style include="va-button-style"></style>
 
     <template is="dom-if" if="[[icon]]">
       <iron-icon icon="[[icon]]"></iron-icon>

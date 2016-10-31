@@ -1,47 +1,38 @@
-<link rel="import" href="../paper-button/paper-button.html">
+<link rel="import" href="./va-button-style.html">
 
 <dom-module id="va-link-button">
   
   <template>
-    
-    <style>
+
+    <style include="va-button-style">
       a {
+        display: inline-block;
         color: inherit;
         text-decoration: none;
       }
-      
-      paper-button {
-        @apply(--va-link-button)
-      }
-      
-      paper-button iron-icon {
-        margin-right: 5px;
-      }
     </style>
-    
+
     <a href="[[href]]">
-      <paper-button raised="[[raised]]">
-        <template is="dom-if" if="[[icon]]">
-          <iron-icon icon="[[icon]]"></iron-icon>
-        </template>
-        <content></content>
-      </paper-button>
+      <template is="dom-if" if="[[icon]]">
+        <iron-icon icon="[[icon]]"></iron-icon>
+      </template>
+      <content></content>
     </a>
-    
+
   </template>
-  
+
   <script>
     Polymer({
-      
+
       is: 'va-link-button',
-      
+
       properties: {
         icon: String,
         href: String,
         raised: Boolean
       }
-      
+
     });
   </script>
-  
+
 </dom-module>
