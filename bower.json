@@ -1,6 +1,6 @@
 {
   "name": "va-buttons",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Useful button components paper-button does not have using Polymer",
   "main": [
     "va-button.html",
